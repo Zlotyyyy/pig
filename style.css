@@ -1,0 +1,279 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    background:#232323;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:100vh;
+    font-size:5vw
+}
+
+a {
+    text-decoration:none;
+    color:orangered;
+    background:linear-gradient(90deg,transparent,limegreen,transparent);
+    background-size:0% 5px;
+    background-repeat: no-repeat;
+    background-position:bottom;
+    transition: 0.3s ease-in-out;
+}
+
+a:hover {
+    color:limegreen;
+    background-size: 100% 5px;
+}
+
+.pig {
+    position:relative;
+    transform-style: preserve-3d;
+    transform: rotateX(130deg) rotateY(0deg) rotateZ(170deg);
+    animation: rotate 5s infinite linear;
+}
+
+@keyframes rotate {
+    0% 
+    {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    100%
+    {
+        transform: rotateX(360deg) rotateY(0deg) rotateZ(360deg);
+    }
+}
+
+/* głowa */
+
+.glowa {
+    position:absolute;
+    transform-style:preserve-3d;
+    transform:translateX(0vw) translateY(3vw) translateZ(4vw);
+}
+
+.gprzod {
+    position:absolute;
+    width:16vw;
+    height:16vw;
+    background-image:url(glowaprzod.jpeg);
+    background-size:100%;
+    transform: rotateX(90deg) rotateY(0deg) rotateZ(180deg) translateX(-2vw) translateY(-8vw) translateZ(24vw);
+}
+
+.gtyl {
+    position:absolute;
+    width:16vw;
+    height:16vw;
+    background-image:url(glowatyl.jpeg);
+    background-size:100%;
+    transform: rotateX(90deg) rotateY(0deg) rotateZ(180deg) translateX(-2vw) translateY(-8vw) translateZ(8vw);
+}
+
+.gryj {
+    position:absolute;
+    width:12vw;
+    height:6vw;
+    background-image:url(ryj.jpeg);
+    background-size:100%;
+    transform: rotateX(90deg) rotateY(0deg) rotateZ(180deg) translateX(-4vw) translateY(-3vw) translateZ(21vw);
+}
+
+.glewybok {
+    position:absolute;
+    width:16vw;
+    height:16vw;
+    background-image:url(glowalewybok.jpeg);
+    background-size:100%;
+    transform: rotateX(90deg) rotateY(-90deg) rotateZ(180deg) translateX(-16vw) translateY(-8vw) translateZ(6vw);
+}
+
+.gprawybok {
+    position:absolute;
+    width:16vw;
+    height:16vw;
+    background-image:url(glowaprawybok.jpeg);
+    background-size:100%;
+    transform: rotateX(90deg) rotateY(90deg) rotateZ(180deg) translateX(16vw) translateY(-8vw) translateZ(10vw);
+}
+
+.ggora {
+    position:absolute;
+    width:16vw;
+    height:16vw;
+    background-image:url(glowagora.jpeg);
+    background-size:100%;
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(2vw) translateY(-16vw) translateZ(16vw);
+}
+
+.gdol {
+    position:absolute;
+    width:16vw;
+    height:16vw;
+    background-image:url(glowadol.jpeg);
+    background-size:100%;
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(2vw) translateY(-16vw) translateZ(0vw);
+}
+.gbok1 {
+    position:absolute;
+    width:12vw;
+    height:2vw;
+    background-image:url(nobok.jpeg);
+    background-size:100%;
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(4vw) translateY(-18vw) translateZ(0vw);
+}
+.gbok2 {
+    position:absolute;
+    width:6vw;
+    height:2vw;
+    background-image:url(nobok.jpeg);
+    background-size:100%;
+    transform: rotateX(0deg) rotateY(90deg) rotateZ(0deg) translateX(-3vw) translateY(-18vw) translateZ(1vw);
+}
+.gbok3 {
+    position:absolute;
+    width:6vw;
+    height:2vw;
+    background-image:url(nobok.jpeg);
+    background-size:100%;
+    transform: rotateX(0deg) rotateY(90deg) rotateZ(0deg) translateX(-3vw) translateY(-18vw) translateZ(13vw);
+}
+.gbok4 {
+    position:absolute;
+    width:12vw;
+    height:2vw;
+    background-image:url(nobok.jpeg);
+    background-size:100%;
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(4vw) translateY(-18vw) translateZ(6vw);
+}
+
+/* tułów */
+
+.tulow {
+width:20vw;
+height:32vw;
+position:absolute;
+transform-style:preserve-3d;
+}
+
+.tdol {
+    position:absolute;
+    width:20vw;
+    height:32vw;
+    background-image:url(dydki.jpeg);
+    background-size:100%;
+}
+.tlewo {
+    display:inline;
+    position:absolute;
+    width:16vw;
+    height:32vw;
+    background-image:url(lewybok.jpeg);
+    right:0;
+    transform:  rotateX(0deg) rotateY(90deg) rotateZ(0deg) translateZ(8vw) translateX(-8vw);
+    background-size:100%;
+}
+.tprawo {
+    position:absolute;
+    width:16vw;
+    height:32vw;
+    background-image:url(lewybok.jpeg);
+    right:0;
+    transform: rotateY(90deg) rotateZ(0deg) translateZ(-12vw) translateX(-8vw);
+    background-size:100%;
+}
+.tgora {
+    position:absolute;
+    width:20vw;
+    height:32vw;
+    background-image:url(plecy.jpeg);
+    background-size:100%;
+    transform: translateZ(16vw);
+}
+.tprzod {
+    position:absolute;
+    width:20vw;
+    height:16vw;
+    background-image:url(szyja.jpeg);
+    background-size:100%;
+    transform: rotateX(-90deg) translateX(0vw) translateY(-8vw) translateZ(-8vw);
+}
+.ttyl {
+    position:absolute;
+    width:20vw;
+    height:16vw;
+    background-image:url(dupa.jpeg);
+    background-size:100%;
+    transform: rotateX(90deg) rotateY(0deg) rotateZ(180deg) translateX(0vw) translateY(-8vw) translateZ(-24vw);
+}
+
+/* nogi */
+
+.noga1{
+    position:absolute;
+    transform-style:preserve-3d;
+    transform:translateX(0vw) translateY(2vw) translateZ(4vw);
+}
+.noga2{
+    position:absolute;
+    transform-style:preserve-3d;
+    transform:translateX(0vw) translateY(-22vw) translateZ(4vw);
+}
+.noga3{
+    position:absolute;
+    transform-style:preserve-3d;
+    transform:translateX(-12vw) translateY(-22vw) translateZ(4vw);
+}
+.noga4{
+    position:absolute;
+    transform-style:preserve-3d;
+    transform:translateX(-12vw) translateY(2vw) translateZ(4vw);
+}
+
+.n1 {
+    position:absolute;
+    width:12vw;
+    height:8vw;
+    background-image:url(noga1.jpeg);
+    right:0;
+    transform: rotateX(0deg) rotateY(90deg) rotateZ(180deg) translateX(-10vw) translateY(-22vw) translateZ(26vw);
+    background-size:100%;
+}
+.n2 {
+    position:absolute;
+    width:12vw;
+    height:8vw;
+    background-image:url(noga2.jpeg);
+    right:0;
+    transform: rotateX(0deg) rotateY(90deg) rotateZ(180deg) translateX(-10vw) translateY(-22vw) translateZ(18vw);
+    background-size:100%;
+}
+.n3 {
+    position:absolute;
+    width:12vw;
+    height:8vw;
+    background-image:url(noga2.jpeg);
+    right:0;
+    transform: rotateX(90deg) rotateY(0deg) rotateZ(90deg) translateX(-10vw) translateY(-22vw) translateZ(-18vw);
+    background-size:100%;
+}
+.n4 {
+    position:absolute;
+    width:12vw;
+    height:8vw;
+    background-image:url(noga2.jpeg);
+    right:0;
+    transform: rotateX(90deg) rotateY(0deg) rotateZ(90deg) translateX(-10vw) translateY(-22vw) translateZ(-26vw);
+    background-size:100%;
+}
+.dol {
+    position:absolute;
+    width:8vw;
+    height:8vw;
+    background-image:url(nogadol.jpeg);
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(90deg) translateX(22vw) translateY(-12vw) translateZ(-16vw);
+    background-size:100%;
+}
